@@ -28,6 +28,12 @@ module.exports = {
             {
                 where: {id: id}
             })
+    },
+
+    async remover(id) {
+        return Modelo.destroy({
+            where: {id: id}
+        })
     }
 
 }
